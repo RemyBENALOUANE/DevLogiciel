@@ -80,9 +80,9 @@ public class JoueurService {
                 .collect(Collectors.toList());
 
         if (!joueurToUpdate.isEmpty()) {
-            Joueur equipeExistante = joueurToUpdate.get(0);
+            Joueur joueurExistant = joueurToUpdate.get(0);
 
-            equipeExistante.setName(joueurMisAJour.getName());
+            joueurExistant.setName(joueurMisAJour.getName());
 
             return "Informations du joueur mises à jour avec succès";
         } else {
@@ -94,18 +94,18 @@ public class JoueurService {
     @ApiOperation(value = "Delete joueur by id", response = String.class)
     public String deleteJoueur(@PathVariable(value = "id") Integer id) {
         Iterator<Joueur> iterator = joueurs.iterator();
-        boolean equipeFound = false;
+        boolean joueurFound = false;
 
         while (iterator.hasNext()) {
             Joueur equipe = iterator.next();
             if (equipe.getId().equals(id)) {
                 iterator.remove();
-                equipeFound = true;
+                joueurFound = true;
                 break;
             }
         }
 
-        if (equipeFound) {
+        if (joueurFound) {
             return "Joueur supprimé avec succès";
         } else {
             return "Aucun joueur trouvé avec l'ID fourni";
