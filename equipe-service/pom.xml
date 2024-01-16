@@ -54,6 +54,13 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 			<version>1.4.3.RELEASE</version>
 		</dependency>
+
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
