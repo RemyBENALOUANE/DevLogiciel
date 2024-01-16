@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "77bd493e-5d2c-4904-980c-4b87f14553fb",
+		"name": "Match",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30971840"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8013/match/getMatchs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8013",
+					"path": [
+						"match",
+						"getMatchs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8013/match/getMatch/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8013",
+					"path": [
+						"match",
+						"getMatch",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6, \r\n    \"equipe1\": 1,\r\n    \"equipe2\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8013/match/addMatch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8013",
+					"path": [
+						"match",
+						"addMatch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"equipe1\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8013/match/updateMatch/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8013",
+					"path": [
+						"match",
+						"updateMatch",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8013/match/deleteMatch/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8013",
+					"path": [
+						"match",
+						"deleteMatch",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

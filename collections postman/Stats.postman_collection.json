@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "0dea37dc-86ce-4204-a4d2-dd056f982cb0",
+		"name": "Stats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30971840"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8014/stats/getStats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"stats",
+						"getStats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stats by equipeId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8014/stats/getStatsEquipe/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"stats",
+						"getStatsEquipe",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stats by joueurId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8014/stats/getStatsJoueur/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8014",
+					"path": [
+						"stats",
+						"getStatsJoueur",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

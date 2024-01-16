@@ -8,12 +8,13 @@ Les autres services et leurs endpoint seront disponibles sur la page Eureka du p
 
 ## Mon Avancé:
 
-Les 4 services fonctionnent correctement.
-
-Il y a juste les requetes getStatsEquipe et getStatsJoueur.
+Les 4 services fonctionnent correctement (Il y a juste les requetes getStatsEquipe et getStatsJoueur que je n'ai pas eu le temps de debugger).
 
 Swagger est disponible pour tous les services.
 
 Actuactor est disponible pour tous les services.
 
 Eureka est lié a tous les services.
+
+
+## Les Collections Postman sont disponible dans le dossier "collections postman"
